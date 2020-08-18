@@ -14,7 +14,6 @@ $ npm install
 Create `.env` file in your root directory and add the following
 
 ```sh
-TMDB_URL=https://api.themoviedb.org/3
 REACT_TMDB_API_KEY=your_tmdb_api_key_here
 ```
 Get api key -
