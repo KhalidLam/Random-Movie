@@ -3,6 +3,8 @@ Random Movie built with ReactJS
 
 ## [Check it live here](https://khalidlam.github.io/Random-Movie/)
 
+Try it out at https://khalidlam.github.io/Random-Movie/
+
 
 ### Installation
 
