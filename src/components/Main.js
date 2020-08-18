@@ -61,9 +61,7 @@ const Main = ({ movie, loading }) => {
             <div className='box'>
               <div className='box-head'>Genres</div>
               <div className='box-body'>
-                <h1 className='display-2'>
-                  {FormatNames(genres)}
-                </h1>
+                <h1 className='display-2'>{FormatNames(genres)}</h1>
               </div>
             </div>
           </div>
@@ -71,9 +69,7 @@ const Main = ({ movie, loading }) => {
             <div className='box'>
               <div className='box-head'>Language</div>
               <div className='box-body'>
-                <h1 className='display-2'>
-                  {FormatNames(spoken_languages)}
-                </h1>
+                <h1 className='display-2'>{FormatNames(spoken_languages)}</h1>
               </div>
             </div>
           </div>

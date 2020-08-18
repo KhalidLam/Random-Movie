@@ -11,7 +11,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
 
   const getMovies = async (pageNum = 1) => {
-    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_TMDB_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${pageNum}`;
+    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${pageNum}`;
     let response = await fetch(url);
     let { results } = await response.json();
     return results;
@@ -25,7 +25,7 @@ const App = () => {
   };
 
   const getMovieData = (movieID) => {
-    let url = `https://api.themoviedb.org/3/movie/${movieID}?api_key=${process.env.REACT_TMDB_API_KEY}&append_to_response=videos`;
+    let url = `https://api.themoviedb.org/3/movie/${movieID}?api_key=${process.env.REACT_APP_API_KEY}&append_to_response=videos`;
 
     fetch(url)
       .then((response) => {
