@@ -1,6 +1,9 @@
 # RandMovie 
 Random Movie built with ReactJS
 
+## [Check it live here](https://khalidlam.github.io/random-movie/)
+
+
 ### Installation
 
 Clone this repo
