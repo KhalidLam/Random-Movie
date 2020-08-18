@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Spinner from "./Spinner";
+import imdblogo from "./imdb.png";
 
 const Main = ({ movie, loading }) => {
   if (!movie || loading) return <Spinner />;
@@ -89,7 +90,7 @@ const Main = ({ movie, loading }) => {
               href={homepage ? homepage : "https://www.imdb.com/"}
               target='_blanc'
             >
-              <img className='img-fluid' src='./imdb.png' alt='imdb logo' />
+              <img className='img-fluid' src={imdblogo} alt='imdb logo' />
             </a>
           </div>
         </div>
