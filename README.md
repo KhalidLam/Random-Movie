@@ -26,3 +26,7 @@ Get api key -
 ```sh
 $ npm run start
 ```
+
+## Todo
+
+- [ ] Add Filter feature
