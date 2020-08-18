@@ -10,7 +10,7 @@ Clone this repo
 
 ```sh
 $ git clone https://github.com/KhalidLam/Random-Movie.git
-$ cd Random-Movie
+$ cd  Random-Movie
 $ npm install
 ```
 
