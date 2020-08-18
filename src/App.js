@@ -66,23 +66,3 @@ const App = () => {
 };
 
 export default App;
-
-// Implementation of : https://stackoverflow.com/questions/47833878/themoviedb-find-random-movie#:~:text=Ping%20%2Fmovie%2Flatest%20to%20get,ll%20have%20to%20re-roll.
-//  const getRandomMovie = async () => {
-//     // Get Random movie's ID
-//     let url = `https://api.themoviedb.org/3/movie/latest?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
-//     let response = await fetch(url);
-//     let { id } = await response.json();
-//     const movieId = Math.floor(Math.random() * id);
-//     console.log(id);
-//     console.log(movieId);
-//     // Get Movie data
-//     let urlMovie = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
-//     let resp = await fetch(urlMovie);
-//     let results = await resp.json();
-//     if (results.hasOwnProperty("success")) {
-//       console.log("not found");
-//       getRandomMovie();
-//     }
-//     console.log(results);
-//   };
