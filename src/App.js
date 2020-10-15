@@ -1,9 +1,11 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Header from "./components/Header";
+import {objectToURLString} from "./components/Helper"
+
 import Main from "./pages/Main";
 import Filter from "./pages/Filter";
-import {objectToURLString} from "./components/Helper"
 
 const App = () => {
   useEffect(() => {

@@ -1,21 +1,16 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import {getLanguageCode, getGenreIds} from "../components/Helper"
-
-
 import LanguageOptions from "../components/LanguageOptions";
 
 const Filter = ({ updateFilter }) => {
   let history = useHistory();
 
-
   const [formData, setformData] = useState({
-
     "primary_release_date.gte" : "1900",
     "primary_release_date.lte" : "2020",
     language_filter: "main",
     with_original_language: "English",
-    // language: "en-US",
     "vote_average.gte": "7",
     with_genres: {
       Action: false,
