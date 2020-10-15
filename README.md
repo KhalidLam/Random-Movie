@@ -1,7 +1,7 @@
 # RandMovie
 Random Movie built with ReactJS
 
-![alt text](https://github.com/KhalidLam/Random-Movie/blob/master/screenshot.jpg?raw=true)
+![alt text](https://github.com/KhalidLam/Random-Movie/blob/master/screenshot.png?raw=true)
 
 ## [Check it live here](https://khalidlam.github.io/Random-Movie/)
 

@@ -1,9 +1,16 @@
-import React, { Fragment } from "react";
-import Spinner from "./Spinner";
-import imdblogo from "./imdb.png";
+import React from "react";
+import Spinner from "../components/spinner/Spinner";
+import imdblogo from "../assets/imdb.png";
+import {FormatNames} from "../components/Helper"
+
 
 const Main = ({ movie, loading }) => {
-  if (!movie || loading) return <Spinner />;
+  if (!movie || loading)
+    return (
+      <main className='main'>
+        <Spinner />
+      </main>
+    );
 
   const {
     title,
@@ -23,7 +30,7 @@ const Main = ({ movie, loading }) => {
   }`;
 
   return (
-    <Fragment>
+    <main className='main'>
       <div className='container'>
         <h1 className='movie-name'>
           {title} <span className='movie-date'>{movieDate}</span>
@@ -95,12 +102,8 @@ const Main = ({ movie, loading }) => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </main>
   );
 };
 
 export default Main;
-
-function FormatNames(array) {
-  return array.map((element) => element.name).join(", ");
-}
