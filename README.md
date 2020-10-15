@@ -31,4 +31,4 @@ $ npm run start
 
 ## Todo
 
-- [ ] Add Filter feature
+- [X] Add Filter feature
